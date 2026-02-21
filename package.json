@@ -1,0 +1,39 @@
+{
+  "name": "@cybersailor/i18n-detect-vue",
+  "version": "0.1.0",
+  "description": "Detect hardcoded strings and missing i18n keys in Vue, TypeScript, and JavaScript files",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "i18n-detect-vue": "dist/cli.js",
+    "i18n-check-keys-vue": "dist/check-cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "i18n",
+    "internationalization",
+    "hardcoded-strings",
+    "detection"
+  ],
+  "author": "Cybersailor",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "dependencies": {
+    "@babel/parser": "^7.15.3",
+    "@babel/traverse": "^7.23.2",
+    "htmlparser2": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
